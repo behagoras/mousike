@@ -2,10 +2,10 @@ import React from 'react';
 // import './MusicPlayer.scss';
 // import pause from '../../assets/static/pause.png';
 import styled from 'styled-components';
-import repeat from '../../assets/static/repeat.png';
-import queue from '../../assets/static/Queue.png';
-import fullScreen from '../../assets/static/fullscreen.png';
-import coverImage from '../../assets/img/album-1.jpg';
+import repeat from '../../../assets/static/repeat.png';
+import queue from '../../../assets/static/Queue.png';
+import fullScreen from '../../../assets/static/fullscreen.png';
+import coverImage from '../../../assets/img/album-1.jpg';
 
 import ControlsStacked from './ControlsStacked';
 
@@ -63,22 +63,22 @@ export const MusicPlayer = () => { // eslint-disable-line import/prefer-default-
       <div>
         <AudioPlayer>
           <SongPlaying>
-            <CoverImage src={coverImage} alt='' srcSet='' />
-            <div className='PlayingInfo'>
+            <CoverImage src={coverImage} alt="" srcSet="" />
+            <div className="PlayingInfo">
               <PlayingArtist>The who</PlayingArtist>
               <PlayingSong>Im free - Live</PlayingSong>
             </div>
           </SongPlaying>
           <ControlsStacked />
           <ExtraActions>
-            <div className='prev-song'>
-              <img src={repeat} alt='' srcSet='' />
+            <div className="prev-song">
+              <img src={repeat} alt="" srcSet="" />
             </div>
-            <div className='play-pause'>
-              <img src={queue} alt='' srcSet='' />
+            <div className="play-pause">
+              <img src={queue} alt="" srcSet="" />
             </div>
-            <div className='next-song'>
-              <img src={fullScreen} alt='' srcSet='' />
+            <div className="next-song">
+              <img src={fullScreen} alt="" srcSet="" />
             </div>
           </ExtraActions>
         </AudioPlayer>
