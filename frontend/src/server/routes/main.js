@@ -11,6 +11,8 @@ import Layout from '../../frontend/components/Layout';
 import reducer from '../../frontend/reducers';
 import render from '../render';
 
+require('@babel/polyfill');
+
 require('dotenv').config();
 
 console.log('main.js');
@@ -18,7 +20,7 @@ console.log('main.js');
 // apiKeyToken: config.apiKeyToken
 let initialState;
 
-const groupBy = key => array => array.reduce(
+const groupBy = (key) => (array) => array.reduce(
   (objectsByKeyValue, obj) => ({
     ...objectsByKeyValue,
     [obj[key]]: (objectsByKeyValue[obj[key]] || []).concat(obj),
@@ -58,7 +60,7 @@ const main = async (req, res, next) => {
         },
         myList: [],
         trends: songsList,
-        originals: songsList.filter(song => song.preview),
+        originals: songsList.filter((song) => song.preview),
         artists: {
           ...groupedByArtist,
         },
