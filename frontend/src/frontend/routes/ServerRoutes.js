@@ -15,11 +15,11 @@ const serverRoutes = (isLogged) => {
       component: isLogged ? Discover : Login,
       exact: true,
     },
-    {
-      path: '/login',
-      component: Login,
-      exact: true,
-    },
+    // {
+    //   path: '/login',
+    //   component: Login,
+    //   exact: true,
+    // },
     {
       path: '/login2',
       component: LoginLayout,
