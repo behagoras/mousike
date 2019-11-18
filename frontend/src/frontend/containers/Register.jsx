@@ -85,9 +85,9 @@ const Register = (props) => {
           <LoginSection>
             ¿Ya tienes una cuenta?
             {' '}
-            <Link to="/login">
+            <a href="/login">
             Inicia sesión acá
-            </Link>
+            </a>
           </LoginSection>
         </RegisterContainer>
       </RegisterSection>

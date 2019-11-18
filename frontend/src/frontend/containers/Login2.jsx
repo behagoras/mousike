@@ -26,9 +26,9 @@ const Header = (props) => {
   //   });
   return (
     <header className={headerClass}>
-      <Link to="/">
+      <a href="/">
         <img className="header__img" src={logo} alt="Platzi Video" />
-      </Link>
+      </a>
       <div className="header__menu">
         <div className="header__menu--profile">
           {hasUser ?
@@ -43,7 +43,7 @@ const Header = (props) => {
           }
           {hasUser ?
             // <li><a href="#logout" onClick={handleLogout}>Cerrar Sesión</a></li> :
-            <li><Link to="/login">Iniciar sesión</Link></li>
+            <li><a href="/login">Iniciar sesión</a></li>
           }
         </ul>
       </div>

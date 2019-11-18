@@ -67,18 +67,15 @@ const Header = (props) => {
         <HeaderMenuProfile className="header__menu--profile">
           {hasUser ?
             <img src={gravatar(user.email)} alt={user.email} /> :
-            <img src={userIcon} alt="" />
-          }
+            <img src={userIcon} alt="" />}
           {/* <p>Perfil</p> */}
         </HeaderMenuProfile>
         <HeaderUl>
           {hasUser ?
-            <li><a href="/">{user.name}</a></li> : null
-          }
+            <li><a href="/">{user.name}</a></li> : null}
           {hasUser ?
             <li><a href="#logout" onClick={handleLogout}>Cerrar Sesión</a></li> :
-            <li><Link to="/login">Iniciar sesión</Link></li>
-          }
+            <li><a href="/login">Iniciar sesión</a></li>}
         </HeaderUl>
       </HeaderMenu>
     </>

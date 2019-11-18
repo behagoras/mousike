@@ -93,9 +93,9 @@ const Login = (props) => {
             <br />
             ¿No tienes ninguna cuenta?:
             {' '}
-            <Link to="/register">
+            <a href="/register">
               Regístrate acá.
-            </Link>
+            </a>
 
           </LoginRegister>
           <br />
